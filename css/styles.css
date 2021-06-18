@@ -276,6 +276,13 @@ footer h4 {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+	flex-wrap: wrap;
+}
+
+.flex-container .col-4 {
+	flex-basis: 25%;
+	min-width: 160px;
+	/* margin: auto; */
 }
 
 .footer-div ul li {
@@ -309,21 +316,9 @@ footer a {
 	margin: 0.5rem;
 }
 
-.social-media ul li .fab{
+.social-media ul li .fab {
 	font-size: 1.5rem;
 }
-
-/* MEDIA QUERY */
-
-/* @media screen and (min-width: 1000px) {
-	.section {
-		flex-wrap: nowrap;
-	}
-
-	.section .img-container {
-		padding-top: 1rem;
-	}
-} */
 
 @media screen and (max-width: 768px) {
 	h2 {
@@ -369,6 +364,10 @@ footer a {
 
 	.question-section .email-form {
 		width: 75vw;
+	}
+
+	.flex-container .col-4 {
+		min-width: 160px;
 	}
 }
 
@@ -431,9 +430,14 @@ footer a {
 
 	.question-section .email-form label {
 		display: flex;
-		margin:5px auto;
+		margin: 5px auto;
 		height: 40px;
 		font-size: 1rem;
+	}
+
+	.flex-container .col-4 {
+		min-width: 80%;
+		margin: 0 auto;
 	}
 
 	/*SLIDE IN */
