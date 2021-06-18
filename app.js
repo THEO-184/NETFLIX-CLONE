@@ -1,5 +1,7 @@
 const questions = document.querySelectorAll(".question");
-
+window.addEventListener("load", () => {
+	AOS.init();
+});
 questions.forEach((question) => {
 	const btn = question.querySelector("span");
 	btn.addEventListener("click", (e) => {
